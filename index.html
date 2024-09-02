@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <title>Dominican Skaur RP - Productos</title>
 </head>
+<script>
+        // Bloquear Ctrl+Shift+I y F12
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                // Ctrl+Shift+I
+                event.preventDefault();
+            }
+            if (event.keyCode == 123) {
+                // F12
+                event.preventDefault();
+            }
+        });
 
+        // Desactiva el Impecionar web xdd
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
 <body onclick="PlayAudio()">
 
     <nav>
